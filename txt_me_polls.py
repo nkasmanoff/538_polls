@@ -50,8 +50,8 @@ def get_polls(url):
  
 
 polls = get_polls(url)
-
-with open('twilio.json') as f:
+path = '/Users/noahkasmanoff/dailyupdate/'
+with open(path+'twilio.json') as f:
     twilio_credentials = load(f)
 f.close()
 
